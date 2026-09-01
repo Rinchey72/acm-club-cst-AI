@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membership Registration - ACM Club CST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ACM Club Membership Registration</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="membership.html">Membership</a>
+    </nav>
+
+    <hr>
+
+    <p>Welcome to the ACM Club! Fill out the form below to register as a new member and join our community.</p>
+
+    <form>
+        <h2>Personal Information</h2>
+        
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="studentId">Student ID:</label><br>
+        <input type="text" id="studentId" name="studentId" required><br><br>
+        
+        <h2>Academic Information</h2>
+        
+        <label for="major">Major/Department:</label><br>
+        <input type="text" id="major" name="major" required><br><br>
+        
+        <label for="year">Academic Year:</label><br>
+        <select id="year" name="year" required>
+            <option value="">-- Select Year --</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="graduate">Graduate</option>
+        </select><br><br>
+        
+        <h2>Interests & Skills</h2>
+        
+        <label for="interests">Areas of Interest (Check all that apply):</label><br>
+        <input type="checkbox" id="web" name="interests" value="Web Development">
+        <label for="web">Web Development</label><br>
+        
+        <input type="checkbox" id="mobile" name="interests" value="Mobile Development">
+        <label for="mobile">Mobile Development</label><br>
+        
+        <input type="checkbox" id="ai" name="interests" value="Artificial Intelligence">
+        <label for="ai">Artificial Intelligence</label><br>
+        
+        <input type="checkbox" id="game" name="interests" value="Game Development">
+        <label for="game">Game Development</label><br>
+        
+        <input type="checkbox" id="data" name="interests" value="Data Science">
+        <label for="data">Data Science</label><br>
+        
+        <input type="checkbox" id="security" name="interests" value="Cybersecurity">
+        <label for="security">Cybersecurity</label><br>
+        
+        <input type="checkbox" id="other" name="interests" value="Other">
+        <label for="other">Other</label><br><br>
+        
+        <label for="experience">Programming Experience:</label><br>
+        <select id="experience" name="experience" required>
+            <option value="">-- Select Level --</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="expert">Expert</option>
+        </select><br><br>
+        
+        <label for="languages">Programming Languages (comma-separated):</label><br>
+        <input type="text" id="languages" name="languages" placeholder="e.g., Python, Java, JavaScript"><br><br>
+        
+        <h2>Additional Information</h2>
+        
+        <label for="motivation">Why do you want to join the ACM Club?</label><br>
+        <textarea id="motivation" name="motivation" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            Subscribe to our newsletter for event updates
+        </label><br><br>
+        
+        <label for="agree">
+            <input type="checkbox" id="agree" name="agree" value="yes" required>
+            I agree to abide by the club's code of conduct
+        </label><br><br>
+        
+        <h2>Submission</h2>
+        <button type="submit">Register as a Member</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+    <hr>
+    <p><em>All fields marked as required must be completed. We'll contact you within 2-3 business days to confirm your membership.</em></p>
+
+</body>
+</html>
